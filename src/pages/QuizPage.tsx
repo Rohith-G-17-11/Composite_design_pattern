@@ -30,12 +30,12 @@ export default function QuizPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sage">
             Knowledge Verification
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl">Composite Pattern Mastery Quiz</h1>
+          <h1 className="font-serif text-4xl sm:text-5xl">Composite Pattern Quiz</h1>
         </div>
       </div>
 
       <p className="mt-4 leading-8 text-mist">
-        Test your understanding of the Composite Design Pattern, GoF UML participants (`Component`, `Leaf`, `Composite`),
+        Test your understanding of the Composite Design Pattern,UML participants (`Component`, `Leaf`, `Composite`),
         and the arithmetic expression tree example (`5 + (10 * 2) = 25`).
       </p>
 

@@ -28,7 +28,7 @@ export default function Navbar({ page, onChange }: Props) {
             Σ
           </span>
           <span>
-            <span className="block font-serif text-lg leading-none text-paper">Composite Lab</span>
+            <span className="block font-serif text-lg leading-none text-paper">Composite Pattern</span>
             <span className="text-[11px] uppercase tracking-[0.16em] text-mist/70">
               Structural pattern
             </span>

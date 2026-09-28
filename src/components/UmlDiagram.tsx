@@ -6,7 +6,7 @@ export type UmlPart = "client" | "component" | "leaf" | "composite" | "note" | "
 const copy: Record<UmlPart, { title: string; body: string }> = {
   client: {
     title: "Client",
-    body: "Works only with the Component interface. It never asks “are you a Leaf or a Composite?” — it just calls Operation() / evaluate(). In our lab the Client is the expression evaluator UI.",
+    body: "Works only with the Component interface. It never asks “are you a Leaf or a Composite?” — it just calls Operation() / evaluate().",
   },
   component: {
     title: "Component (interface)",
@@ -71,7 +71,7 @@ export default function UmlDiagram() {
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)]">
       <div className="overflow-x-auto rounded-2xl border border-line bg-[#ece7dc] p-3 sm:p-5">
         <p className="mb-2 px-1 text-xs font-medium uppercase tracking-[0.16em] text-[#5c6578]">
-          Canonical GoF / Refactoring Guru structure — click a box
+          Click a box to see in detail
         </p>
         <svg
           viewBox="0 0 920 420"

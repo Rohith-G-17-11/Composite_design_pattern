@@ -18,7 +18,7 @@ export const quiz: QuizQuestion[] = [
     why: "Composite allows Clients to treat Leaf primitives and Composite groups through a single unified Component interface.",
   },
   {
-    q: "In our Expression Tree example (5 + (10 * 2)), what corresponds to the GoF 'Leaf' participant?",
+    q: "In our Expression Tree example (5 + (10 * 2)), what corresponds to the 'Leaf' participant?",
     options: [
       "The '+' operator node",
       "The '*' operator node",
@@ -29,7 +29,7 @@ export const quiz: QuizQuestion[] = [
     why: "Leaf participants are primitive nodes with no children. NumberExpr stores a value and evaluates it directly without delegating.",
   },
   {
-    q: "Which GoF UML participant stores children and implements Operation() by delegating to each child?",
+    q: "Which UML participant stores children and implements Operation() by delegating to each child?",
     options: ["Client", "Component interface", "Leaf", "Composite"],
     answer: 3,
     why: "Composite aggregates child Components (the hollow diamond ◇) and executes child.evaluate() on each child.",
@@ -46,7 +46,7 @@ export const quiz: QuizQuestion[] = [
     why: "Uniformity is the core benefit. The Client depends only on Expression.evaluate(), keeping client code simple and decoupling it from concrete tree node types.",
   },
   {
-    q: "What does the hollow diamond (◇) pointing to Component signify on the GoF Composite UML diagram?",
+    q: "What does the hollow diamond (◇) pointing to Component signify on the Composite UML diagram?",
     options: [
       "Composite inherits from Client.",
       "Composite aggregates (has-a collection of) Component objects.",
@@ -90,7 +90,7 @@ export const quiz: QuizQuestion[] = [
     why: "Because Clients only depend on the Component interface, adding new node classes does not require modifying existing evaluation logic.",
   },
   {
-    q: "Which GoF design pattern is frequently combined with Composite to perform new operations across tree nodes without altering node classes?",
+    q: "Which design pattern is frequently combined with Composite to perform new operations across tree nodes without altering node classes?",
     options: ["Singleton", "Visitor", "Adapter", "Factory Method"],
     answer: 1,
     why: "Visitor lets you define new operations (e.g. pretty-printing, type-checking, compiling) across the Composite tree structure without polluting node classes.",

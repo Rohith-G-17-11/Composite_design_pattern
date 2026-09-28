@@ -233,7 +233,7 @@ class NumberExpr implements Expression {
 
       {/* 3. Design Pattern Synergy Cards */}
       <section className="mt-12">
-        <h2 className="font-serif text-3xl text-paper">GoF Pattern Synergy</h2>
+        <h2 className="font-serif text-3xl text-paper">Relation with other pattern</h2>
         <p className="mt-2 text-sm text-mist">
           Composite is rarely used in isolation. Here is how it combines with other GoF patterns:
         </p>

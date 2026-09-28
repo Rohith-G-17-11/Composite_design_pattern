@@ -4,11 +4,11 @@ export default function StructurePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sage">
-        Structure · do not invent another diagram
+        Structure
       </p>
-      <h1 className="mt-3 font-serif text-4xl sm:text-5xl">The Composite UML</h1>
+      <h1 className="mt-3 font-serif text-4xl sm:text-5xl">The Composite Pattern UML</h1>
       <p className="mt-4 max-w-3xl leading-8 text-mist">
-        This course uses one structure: the classic Component / Leaf / Composite diagram. Client depends
+        The classic Component / Leaf / Composite diagram. Client depends
         on the Component interface. Leaf and Composite both implement Operation(). Composite aggregates
         Component children (the hollow diamond) and, in Operation(), uses child.operation() on each
         child. Nested Composites are allowed because a child is a Component, not a Leaf.
@@ -16,7 +16,6 @@ export default function StructurePage() {
 
       <figure className="mt-10 overflow-hidden rounded-2xl border border-line bg-[#ece7dc] p-4">
         <figcaption className="mb-3 px-1 text-xs font-medium uppercase tracking-[0.16em] text-[#5c6578]">
-          Reference figure (the structure this site teaches)
         </figcaption>
         <img
           src="/composite-uml.png"

@@ -19,14 +19,14 @@ export default function LearnPage({ onOpen }: Props) {
         className="overflow-hidden rounded-3xl border border-line bg-[radial-gradient(1200px_circle_at_10%_-10%,#2f6f56_0%,transparent_42%),linear-gradient(180deg,#172038,transparent)] px-6 py-14 sm:px-12"
       >
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sage">
-          Structural design pattern · Course
+          Structural design pattern
         </p>
         <h1 className="mt-4 max-w-3xl font-serif text-4xl leading-tight text-paper sm:text-6xl">
           Treat a tree of objects as one object.
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-mist">
           Composite lets a Client call a single <code className="text-gold">Operation()</code> on either a
-          Leaf or a whole group. This lab teaches that idea the way Refactoring Guru frames it, and
+          Leaf or a whole group. This lab teaches that idea and
           proves it with one running example: the expression{" "}
           <span className="text-paper">5 + (10 × 2) = 25</span>.
         </p>
@@ -53,16 +53,16 @@ export default function LearnPage({ onOpen }: Props) {
           {
             icon: Layers,
             t: "Intent",
-            d: "Compose objects into a tree that models a part–whole hierarchy, then work with that tree through one Component interface.",
+            d: "Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.",
           },
           {
             icon: GitBranch,
-            t: "The contract",
-            d: "Component declares Operation(). Leaf implements it directly. Composite stores children and calls child.operation() on each child.",
+            t: "Real-World Analogy",
+            d: "Armies of most countries are structured as hierarchies. An army consists of several divisions; a division is a set of brigades, and a brigade consists of platoons, which can be broken down into squads. Finally, a squad is a small group of real soldiers. Orders are given at the top of the hierarchy and passed down onto each level until every soldier knows what needs to be done.",
           },
           {
             icon: Sigma,
-            t: "The lab example",
+            t: "Proposed example",
             d: "Number is a Leaf. Operator is a Composite. evaluate() is Operation(). Nested operators become nested Composites.",
           },
         ].map((card) => (
@@ -131,7 +131,7 @@ root.evaluate(); // 25, whether root is 5 or 5+(10*2)`}
       <section className="mt-16">
         <h2 className="font-serif text-3xl">Analogy</h2>
         <p className="mt-4 max-w-3xl leading-8 text-mist">
-          Refactoring Guru’s boxes-and-products picture is the same shape as our expression tree. A boxed
+          A commonly used example,Boxes-and-products is shaped as our expression tree. A boxed
           gift contains products and smaller boxes. Asking “what is the total price?” is one question to
           the outer box. The box asks each child; a product answers with its price; a nested box repeats
           the question. Swap “price” for “value”, “product” for Number, “box” for Operator, and you have{" "}

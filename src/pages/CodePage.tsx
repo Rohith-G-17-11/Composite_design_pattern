@@ -362,12 +362,11 @@ export default function CodePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sage">
-        Implementation Lab
+        Implementation
       </p>
-      <h1 className="mt-2 font-serif text-4xl sm:text-5xl">Code & Multi-Language Lab</h1>
+      <h1 className="mt-2 font-serif text-4xl sm:text-5xl">Code for Composite pattern</h1>
       <p className="mt-4 max-w-3xl leading-8 text-mist">
-        Study the Composite design pattern in your preferred programming language. Notice how every
-        language enforces the same GoF contract: <code className="text-gold">Component</code> interface,{" "}
+        Study the Composite design pattern in your preferred programming language.<code className="text-gold">Component</code> interface,{" "}
         <code className="text-gold">Leaf</code> primitive, and <code className="text-gold">Composite</code> aggregation.
       </p>
 
@@ -391,10 +390,10 @@ export default function CodePage() {
       {/* Code Blocks Grid */}
       <div className="mt-10 grid gap-6">
         {[
-          { key: "component", title: "1. Component Interface", code: activeSnippet.component, note: "GoF Component participant" },
-          { key: "leaf", title: "2. Leaf Implementation (NumberExpr)", code: activeSnippet.leaf, note: "GoF Leaf participant (no children)" },
-          { key: "composite", title: "3. Composite Implementation (OperatorExpr)", code: activeSnippet.composite, note: "GoF Composite participant (child.evaluate() loop)" },
-          { key: "client", title: "4. Client Usage", code: activeSnippet.client, note: "GoF Client participant" },
+          { key: "component", title: "1. Component Interface", code: activeSnippet.component, note: "Component participant" },
+          { key: "leaf", title: "2. Leaf Implementation (NumberExpr)", code: activeSnippet.leaf, note: "Leaf participant (no children)" },
+          { key: "composite", title: "3. Composite Implementation (OperatorExpr)", code: activeSnippet.composite, note: "Composite participant (child.evaluate() loop)" },
+          { key: "client", title: "4. Client Usage", code: activeSnippet.client, note: "Client participant" },
         ].map((block) => (
           <article key={block.key} className="overflow-hidden rounded-2xl border border-line bg-panel shadow-lg">
             <header className="flex flex-wrap items-center justify-between gap-2 border-b border-line bg-ink-soft/80 px-5 py-3.5">
@@ -426,7 +425,7 @@ export default function CodePage() {
         <div className="flex items-center gap-3">
           <Terminal className="text-sage" size={24} />
           <div>
-            <h2 className="font-serif text-2xl text-paper">Interactive In-Browser Sandbox</h2>
+            <h2 className="font-serif text-2xl text-paper">Interactive In-Browser execution</h2>
             <p className="text-xs text-mist">
               Instantiate real TypeScript <code className="text-gold">NumberExpr</code> and <code className="text-gold">OperatorExpr</code> classes live in your browser!
             </p>
